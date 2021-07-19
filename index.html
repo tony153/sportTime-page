@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>storp</title>
+	<link rel="stylesheet" type="text/css" href="Timing.css">
+	<link rel="stylesheet" type="text/css" href="mina.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+	
+<body>
+	<div class="timing_page">
+		<div class="timingwrap_f">
+		<div class="timingwrap">
+			<div class="circle"></div>
+			<div class="halfcircle"></div>
+			<div class="left"></div>
+			<div class="right"></div>
+			<div id="timingtime">0s</div>
+		</div>
+		</div>
+		<div id="button_plan">
+			<button id="skip" class="skip">Skip →</button><br/>
+			<button id="start" class="sport">Sport
+			</button>
+		</div>
+	</div>
+	
+	<div class="setting_page">
+		<center>
+			<div class="title">Setting Page</div>
+			<div style="position: absolute; height:89%;width: 100%; overflow:scroll;">
+				<br>
+				<div class="ButtonRela">
+					Sport time:
+					<input type="number" value="60" id="Sport_time">S<br><br>
+					Break time:
+					<input type="number" value="20" id="Break_time">S<br><br>
+					Timing Animation mode:
+					<button id="Timing_Animation_mode">Smooth</button><br><br>
+					Count Backwards:
+					<button id="Count_Backwards">OFF</button>
+				</div>
+				<br>
+				<div class="ButtonRela">
+					Vibrate:
+					<button id="vibrate">ON</button><br><br>
+					Duration:
+					<input type="number" value="300" id="vibrateDuration">mS<br><br>
+					Interval:
+					<input type="number" value="1000" id="vibrateInterval">mS<br><br>
+				</div>
+				<br>
+				<div class="ButtonRela">
+					Only Break:
+					<button id="Only_Break">OFF</button><br><br>
+					Aout Timing:
+					<button id="Aout_timing">OFF</button>
+				</div><br><br>
+				<div style="height:68px;background-color:#6A7C80;font-size: 13px;">~ In the end~ </div>
+			</div>
+			
+		</center>
+	</div>
+	
+	
+<!--
+	<button id=testButton>Test</button>
+	<button id=stopButton>stop</button>
+-->
+	<div class="chagepage">
+		<div class="chagepage_C">
+			<button id="timing_page_button"><img src="img/timing_button.png" /></button>
+			<button id="setting_page_button"><img src="img/setting_button.png" /></button>
+		</div>
+	</div>
+	
+	
+	
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="timing.js"></script>
+	<script type="text/javascript" src="mina.js"></script>
+	<script type="text/javascript" src="Vibration.js"></script>
+	
+</body>
+</html>
